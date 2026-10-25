@@ -29,12 +29,12 @@ public class Client {
                 String operateur = parts[1];
                 double op2 = Double.parseDouble(parts[2]);
 
-                // Création et envoi de l’objet
+
                 Operation operation = new Operation(op1, operateur, op2);
                 oos.writeObject(operation);
                 oos.flush();
 
-                // Réception du résultat
+
                 String resultat = (String) ois.readObject();
                 System.out.println("Résultat reçu : " + resultat);
             }
@@ -49,7 +49,7 @@ public class Client {
     }
 }
 
-// Classe interne représentant l’objet échangé
+
 class Operation implements Serializable {
     private static final long serialVersionUID = 1L;
     private double operande1;
