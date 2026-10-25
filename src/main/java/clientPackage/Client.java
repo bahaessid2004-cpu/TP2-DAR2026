@@ -49,7 +49,6 @@ public class Client {
     }
 }
 
-
 class Operation implements Serializable {
     private static final long serialVersionUID = 1L;
     private double operande1;
